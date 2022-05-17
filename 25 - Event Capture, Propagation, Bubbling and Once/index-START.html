@@ -48,7 +48,7 @@ function logText(e){
   console.log(this.classList.value);
   e.stopPropagation();
 }
-but.addEventListener('click', ()=>console.log("Click!!"),{once:true});
+but.addEventListener('click', ()=>console.log("Click!!"),{once:true}); 
 divs.forEach(div => div.addEventListener('click',logText,{capture:false}));
 </script>
 </body>
